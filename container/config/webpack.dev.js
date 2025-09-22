@@ -1,5 +1,5 @@
 const { merge } = require("webpack-merge");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 const commonConfig = require("./webpack.common");
 const packageJson = require("../package.json");
 const path = require("path");
@@ -21,9 +21,6 @@ const devConfig = {
         marketing: "marketing@http://localhost:8081/remoteEntry.js",
       },
       shared: packageJson.dependencies,
-    }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "../public/index.html"),
     }),
   ],
 };
