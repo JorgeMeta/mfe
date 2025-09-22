@@ -4,7 +4,7 @@ import MarketingRectComponent from "./components/MarketingApp";
 export default () => {
   return (
     <h1>
-      Hi there!
+      Hi there!!
       <hr />
       <MarketingRectComponent />
     </h1>
