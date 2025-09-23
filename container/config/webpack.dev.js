@@ -11,7 +11,7 @@ const devConfig = {
     port: 8080,
     hot: true,
     historyApiFallback: {
-      index: "index.html",
+      index: "/index.html",
     },
   },
   plugins: [
